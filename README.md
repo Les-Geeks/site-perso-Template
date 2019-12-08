@@ -1,153 +1,228 @@
-# MY CV
+---
+Title: My Personal Website
+tags: Templates, DevOps
+description: Mon CV "Slide Mode".
+Authors: Laurent Marques
+---
 
-[![Build Status](https://travis-ci.org/gnab/remark.svg?branch=develop)](https://travis-ci.org/gnab/remark)
-[![CDNJS](https://img.shields.io/cdnjs/v/remark.svg)](https://cdnjs.com/libraries/remark)
-[![Donate](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4ADT275DY7JTG)
+# My Personal Website
 
-A simple, in-browser, markdown-driven slideshow tool targeted at people who know their way around HTML and CSS, featuring:
-
-- Markdown formatting, with smart extensions
-- Presenter mode with markdown formatted speaker notes and cloned slideshow view
-- Syntax highlighting, supporting a range of languages
-- Slide scaling, thus similar appearance on all devices / resolutions
-- Simple markdown templates for customized slides
-- Touch support for smart phones and pads, i.e. swipe to navigate slides
-
-Check out [this remark slideshow](http://gnab.github.com/remark) for a brief introduction.
-
-To render your Markdown-based slideshow on the fly, checkout [Remarkise](https://gnab.github.io/remark/remarkise).
-
-### Getting Started
-
-It takes only a few, simple steps to get up and running with remark:
-
-1. Create an HTML file to contain your slideshow (see boilerplate below)
-2. Open the HTML file in a decent browser
-3. Edit the Markdown and/or CSS styles as needed, save and refresh!
-4. Press `C` to clone a display; then press `P` to switch to presenter mode. Open help menu with `h`.
-
-See any of the boilerplate-*.html files, or just copy the boilerplate HTML below to start:
-
-```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Title</title>
-    <meta charset="utf-8">
-    <style>
-      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
-      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
-      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-
-      body { font-family: 'Droid Serif'; }
-      h1, h2, h3 {
-        font-family: 'Yanone Kaffeesatz';
-        font-weight: normal;
-      }
-      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-    </style>
-  </head>
-  <body>
-    <textarea id="source">
-
-class: center, middle
-
-# Title
+<!-- Put the link to this slide here so people can follow -->
+slide: https://hackmd.io/@metalfrags/S1BX7J5aH
 
 ---
 
-# Agenda
 
-1. Introduction
-2. Deep-dive
-3. ...
+Template website CV Revision: 0.0.1
+
+Please prepare laptop or smartphone to join this community!
 
 ---
 
-# Introduction
+## Who am I?
+Hi my name is Laurent,
 
-    </textarea>
-    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
-    </script>
-    <script>
-      var slideshow = remark.create();
-    </script>
-  </body>
-</html>
+I from in France, i love technologies, informatique and computeur, programming... and very best challenge.
+For my work i use more technologies.
+
+And you, how are you ?
+
+I suggest you get to know me below :8ball: 
+
+---
+
+### My Background
+
+- Hardware computer Technician
+- Network Administrator
+- Front-end developper Junior, 
+- Solution Architecte 
+- Ingénieur Cloud DevOps
+
+---
+### Tools and OS i use :100: 
+- VSCode, Pycharm
+- Linux, Mac Os, Windows, 
+- Emacs, Vim, HackMD and AWS :heart: 
+
+---
+
+
+### Langage: 
+
+- Python3, Bash, MD, HTML, Css, yaml, json
+    - I love Github and Gitlab for versionning with  Hack MD for create best project :+1: 
+- I use tabs. :cat: 
+
+---
+
+### Actually Mission:
+- Gekko (Team Support Airbus)
+ >With Airbus SAS to create the best projects :+1:
+- Team support is the best !
+- Onboarding process
+
+---
+
+### Consulting
+>And DevOps Teachers for Gekko Academy
+
+---
+
+### Onboarding Process
+- Agiles methods, Scrum, Kanban (Jira Admin, Confluence, Trello) 
+    - Onboarding Process (Tools DevOps)
+- Team Leader
+    - curious, dynamic, best effort, 
+- Owner, Admin, Organisation Versionning (Github, Gitlab)
+- Mode Project
+- Best practice
+
+---
+
+### Deploy 
+- Architecturing your application in the AWS Cloud
+- DevOps (CI/CD)
+- Ansible, Terraform, Cloud formation
+- Artifactory 
+- Best practice
+
+---
+
+### 70% of our users are developers. Developers :heart: GitHub.
+
+---
+
+{%youtube E8Nj7RwXf0s %}
+
+---
+
+### Usage flow
+
+---
+
+
+```graphviz
+digraph {
+  compound=true
+  rankdir=RL
+
+  graph [ fontname="Source Sans Pro", fontsize=20 ];
+  node [ fontname="Source Sans Pro", fontsize=18];
+  edge [ fontname="Source Sans Pro", fontsize=12 ];
+
+
+  subgraph core {
+    c [label="Hackmd-it \ncore"] [shape=box]
+  }
+  
+  c -> sync [ltail=session lhead=session]
+
+  subgraph cluster1 {
+     concentrate=true
+    a [label="Text source\nGithub, Gitlab, ..."] [shape=box]
+    b [label="HackMD Editor"] [shape=box]
+    sync [label="sync" shape=plaintext ]
+    b -> sync  [dir="both"]
+    sync -> a [dir="both"]
+    label="An edit session"
+  }
+}
 ```
 
-### How To Use remark
+---
 
-The [wiki](http://github.com/gnab/remark/wiki) pages contain all the how-to, templating, and API help.
+### Architecture of extension
 
-### Real-world remark slideshows
+---
 
-On using remark:
+![](https://i.imgur.com/ij69tPh.png)
 
-- [The Official remark Slideshow](http://gnab.github.com/remark)
-- [Coloured Terminal Listings in remark](http://joshbode.github.com/remark/ansi.html) by [joshbode](https://github.com/joshbode)
+---
 
-Other interesting stuff:
+## Content script
 
-- [gnab.github.com/editorjs](http://gnab.github.com/editorjs)
-- [judoole.github.com/GroovyBDD](http://judoole.github.com/GroovyBDD)
-- [bekkopen.github.com/infrastruktur-som-kode](http://bekkopen.github.com/infrastruktur-som-kode)
-- [ivarconr.github.com/Test-Driven-Web-Development/slides](http://ivarconr.github.com/Test-Driven-Web-Development/slides)
-- [havard.github.com/node.js-intro-norwegian](http://havard.github.com/node.js-intro-norwegian)
-- [mobmad.github.com/js-tdd-erfaringer](http://mobmad.github.com/js-tdd-erfaringer)
-- [torgeir.github.com/busterjs-lightning-talk](http://torgeir.github.com/busterjs-lightning-talk)
-- [roberto.github.com/ruby-sinform-2012](http://roberto.github.com/ruby-sinform-2012)
-- [http://asmeurer.github.io/python3-presentation/slides.html](http://asmeurer.github.io/python3-presentation/slides.html)
-- [Lecture notes using remark](http://keysan.me/ee361/)
-- [Big Data in Time - Progress and Challenges from Oceanography](http://www.jmlilly.net/talks/bigdata16.html)
+- Bind with each page
+- Manipulate DOM
+- Add event listeners
+- Isolated JavaScript environment
+  - It doesn't break things
 
-### Other systems integrating with remark
+---
 
-- [http://platon.io](http://platon.io)
-- [Remarkymark (Remark.js in Middleman)](https://github.com/camerond/remarkymark)
-- [Remark Boilerplate](https://github.com/brenopolanski/remark-boilerplate)
-- [Repositorium](https://github.com/pille1842/repositorium)
-- [Backslide](https://github.com/sinedied/backslide) - CLI for automating creation, export and PDF conversion of Remark presentations
-- [Remarker](https://github.com/kt3k/remarker) - CLI for serving and building Remark slideshow from markdown file
-- [Cicero](https://github.com/bast/cicero) - Serves presentation slides written in markdown using remark or reveal.js, directly from GitHub or GitLab
+# :fork_and_knife: 
 
-### Printing
+---
 
-Converting to PDF is primarily supported via Chrome's Print to PDF feature. Note that the styling is not exact; See [#50](https://github.com/gnab/remark/issues/50#issuecomment-223887379) for some recommended CSS to add to your styles.
+<style>
+code.blue {
+  color: #337AB7 !important;
+}
+code.orange {
+  color: #F7A004 !important;
+}
+</style>
 
-Alternatively, you can use [DeckTape](https://github.com/astefanutti/decktape), a PDF exporter for HTML presentation frameworks that provides support for remark.
+- <code class="orange">onMessage('event')</code>: Register event listener
+- <code class="blue">sendMessage('event')</code>: Trigger event
 
-### Contributors
+---
 
-- [kjbekkelund](https://github.com/kjbekkelund)
-- [DanTup](https://github.com/DanTup)
-- [freakboy3742](https://github.com/freakboy3742)
-- [nanoant](https://github.com/nanoant)
-- [gurjeet](https://github.com/gurjeet)
-- [torgeir](https://github.com/torgeir)
-- [junderhill](https://github.com/junderhill)
-- [gureckis](https://github.com/gureckis)
-- [hfukada](https://github.com/hfukada)
-- [danielstankiewicz](https://github.com/danielstankiewicz)
-- [andrewgaul](https://github.com/andrewgaul)
-- [tripu](https://github.com/tripu)
-- [kud](https://github.com/kud)
-- [toenuff](https://github.com/toenuff)
-- [obfusk](https://github.com/obfusk)
-- [trumbitta](https://github.com/trumbitta)
-- [peter50216](https://github.com/peter50216)
-- [mhor](https://github.com/mhor)
-- [roberto](https://github.com/roberto)
-- [camerond](https://github.com/camerond)
-- [avdv](https://github.com/avdv)
-- [WouterSioen](https://github.com/WouterSioen)
-- [tchajed](https://github.com/tchajed)
-- [venthur](https://github.com/venthur)
-- [mathiasbynens](https://github.com/mathiasbynens)
-- [aminb](https://github.com/aminb)
-- [sol](https://github.com/sol)
+# :bulb: 
 
-### License
+---
 
-remark is licensed under the MIT license. See LICENSE for further
-details.
+- Dead simple API
+- Only cares about application logic
+
+---
+
+```typescript
+import * as Channeru from 'channeru'
+
+// setup channel in different page environment, once
+const channel = Channeru.create()
+```
+
+---
+
+```typescript
+// in background script
+const fakeLogin = async () => true
+
+channel.answer('isLogin', async () => {
+  return await fakeLogin()
+})
+```
+
+<br>
+
+```typescript
+// in inject script
+const isLogin = await channel.callBackground('isLogin')
+console.log(isLogin) //-> true
+```
+
+---
+
+# :100: :muscle: :tada:
+
+---
+
+### Wrap up
+
+- Cross envornment commnication
+- A small library to solve messaging pain
+- TypeScript Rocks :tada: 
+
+---
+
+### Thank you! :sheep: 
+
+You can find me on
+
+- GitHub
+- Twitter
+- or email me
+
+![Gekko](https://github.com/Les-Geeks/Documentation/blob/dev/img/LOGO_GEKKO_LES-INGENIEURS-DU-CLOUD_RVB-1_import.png)
