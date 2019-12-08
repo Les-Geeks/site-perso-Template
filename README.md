@@ -8,6 +8,9 @@ Authors: Laurent Marques
 # My Personal Website
 
 <!-- Put the link to this slide here so people can follow -->
+
+To render your Markdown-based slideshow on the fly, checkout [Remarkise](https://gnab.github.io/remark/remarkise).
+
 slide: https://hackmd.io/@metalfrags/S1BX7J5aH
 
 ---
